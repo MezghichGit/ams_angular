@@ -11,21 +11,21 @@ export class UserService {
       "name": "Leanne Graham",
       "username": "Bret",
       "email": "Sincere@april.biz",
-      "address":  "Kulas Light",
+      "address":  "France",
     },
     {
       "id": 2,
       "name": "Ervin Howell",
       "username": "Bret",
       "email": "Ervin.Howell@april.biz",
-      "address":  "Kulas Light",
+      "address":  "USA",
     },
     {
       "id": 3,
       "name": "Clementine.Bauch",
       "username": "Bret",
       "email": "Clementine.Bauch@april.biz",
-      "address":  "Kulas Light",
+      "address":  "Espagne",
     }
   ]
 

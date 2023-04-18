@@ -2,6 +2,15 @@
 
 <h4>Adress : Paris</h4>
 
-<ol>
-  <li *ngFor="let user of tab">{{user}}</li>
-</ol>
+<table border="1" align="center" class="table">
+  <tr><th>ID</th><th>Name</th><th>Username</th><th>Email</th><th>Address</th></tr>
+  <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.address}}</td>
+  </tr>
+
+</table>
+

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../services/user.service';
+import { User } from '../Models';
 
 @Component({
   selector: 'app-contact',
@@ -8,14 +9,15 @@ import { UserService } from '../services/user.service';
 })
 export class ContactComponent implements OnInit {
 
-  tab:string[]=[];
+  //tab:string[]=[];
+  users:User[]=[];
   constructor(private service:UserService){ // l'injection d'un dépendence = un service
     console.log("constructeur");
   }
 
   ngOnInit(){
-    console.log("ngOnInit");
-    this.tab = this.service.getAllUsers();
+    console.log("ng On Init");
+    this.users = this.service.getAllUsers();
   }
 
 }
