@@ -1,5 +1,17 @@
 <h3 align="center">Formulaire de contact</h3>
 
+<form #contact="ngForm" (ngSubmit)="postMessage(contact.value)">
+  <div >
+  Nom : <input ngModel class="form-control" type="text" name="nom"/>
+  <br/>
+  Prénom : <input ngModel class="form-control"  type="text" name="prenom"/>
+  <br/>
+  Email : <input ngModel class="form-control"  type="text" name="email"/>
+  <br/>
+  <input class="form-control btn btn-primary"  type="submit" value="Envoyer"/>
+</div>
+</form>
+
 <h4>Adress : Paris</h4>
 
 <table border="1" align="center" class="table">

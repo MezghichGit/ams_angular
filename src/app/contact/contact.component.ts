@@ -23,6 +23,15 @@ export class ContactComponent implements OnInit {
         this.users = data;
       }
     );
+  }
+  postMessage(monformulaire:any)
+  {
+    //alert("Envois avec succès");
+    //console.log(monformulaire)
+    let nom = monformulaire.nom;
+    let prenom = monformulaire.prenom;
+    let email = monformulaire.email;
+    alert("Vous êtes : "+nom+" "+prenom+" "+email);
 
   }
 
