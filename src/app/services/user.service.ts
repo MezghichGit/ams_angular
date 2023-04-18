@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { User } from '../Models';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -29,16 +30,20 @@ export class UserService {
     }
   ]
 
-  constructor() { }
+  constructor(private http:HttpClient) { }  // injection un service dans un service
 
   /*getAllUsers():string[]
   {
       return ["Amine","Lucas","Benoit"];
   }*/
 
-  getAllUsers():User[]
+  /*getAllUsers():User[]
   {
     return this.users;
+  }*/
+
+  getAllUsers(){
+    return this.http.get("https://jsonplaceholder.typicode.com/users");
   }
 
   //get

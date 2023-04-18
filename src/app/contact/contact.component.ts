@@ -10,14 +10,20 @@ import { User } from '../Models';
 export class ContactComponent implements OnInit {
 
   //tab:string[]=[];
-  users:User[]=[];
+  //users:User[]=[];
+  users:any;
   constructor(private service:UserService){ // l'injection d'un dépendence = un service
-    console.log("constructeur");
+    //console.log("constructeur");
   }
 
   ngOnInit(){
-    console.log("ng On Init");
-    this.users = this.service.getAllUsers();
+    //console.log("ng On Init");
+    this.service.getAllUsers().subscribe(
+      data =>{
+        this.users = data;
+      }
+    );
+
   }
 
 }
