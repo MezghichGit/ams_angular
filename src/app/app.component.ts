@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ams';
+  public title = 'ams';  // un attribut
+  formation:string = "Angular";
+
+  stagiaires :string[] = ["lucas", "benoit","amine"];
+  logo:string="https://www.plb.fr/app/images/logo-plb/officiel/logo-plb-Avenir.svg"
+
+  display()
+  {
+    //alert("Hello Angular");
+    console.log ("Hello Benoit et Lucas");
+  }
 }
