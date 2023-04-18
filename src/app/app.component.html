@@ -1,13 +1,15 @@
-{{title}}
-<img [src]="logo" />
+<img [src]="logo" width="20%"/>
+<h1 align="center">{{title|uppercase}}</h1>
+
 <h2 align="center">{{formation}}</h2>
 
 <ul>
   <li *ngFor="let stagiaire of stagiaires">{{stagiaire|uppercase|addIng}}</li>
 </ul>
 
-<button (click)="display()">Cliquer</button>
+<button (click)="display()" class="btn btn-primary">Cliquer</button>
 <hr/>
+<app-contact></app-contact>
 
 
 

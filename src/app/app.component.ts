@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public title = 'ams';  // un attribut
+  public title = 'ams project';  // un attribut
   formation:string = "Angular";
 
   stagiaires :string[] = ["lucas", "benoit","amine"];
@@ -14,7 +14,7 @@ export class AppComponent {
 
   display()
   {
-    //alert("Hello Angular");
-    console.log ("Hello Benoit et Lucas");
+    alert("Hello Angular");
+    //console.log ("Hello Benoit et Lucas");
   }
 }
